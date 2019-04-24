@@ -38,13 +38,58 @@
   font-style: normal;
 }
 
+.button {
+  font-family: Roboto Medium, serif;
+  font-size: 14px;
+  background-color: #ff9d00;
+  border: none;
+  color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #ffa71a;
+}
+
+.button img {
+  vertical-align: middle;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-contacts__phone {
+  color: #373737;
+  font-size: 22px;
+  margin-right: 14px;
+  text-decoration: none;
+}
+
+.header-contacts__phone-border-right {
+  border-right: 1px solid #cfcfd0;
+  padding-right: 14px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  font-family: Roboto Black;
-  font-style: italic;
+  font-family: Roboto Medium, serif;
 }
 /*# sourceMappingURL=style.css.map */
