@@ -7,6 +7,10 @@ html, body {
   padding: 0;
 }
 
+input:focus, button:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: 'Roboto Bold';
   src: url("../fonts/Roboto/Roboto-Bold.eot");
@@ -61,6 +65,12 @@ html, body {
   background-color: #ffa71a;
 }
 
+.button_big {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: middle;
+}
+
 .button img {
   vertical-align: middle;
 }
@@ -98,6 +108,7 @@ html, body {
   padding-top: 65px;
   padding-bottom: 60px;
   background: #373737 url("../img/main/main-bg.jpg") center center no-repeat;
+  background-size: cover;
   color: #ffffff;
   z-index: 1;
 }
@@ -137,9 +148,53 @@ html, body {
 }
 
 .main-text__subtitle {
+  margin-bottom: 27px;
   font-family: Roboto Light;
   font-size: 28px;
   font-weight: 500;
+}
+
+.main-text__form {
+  padding: 30px 27px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.form-title {
+  margin-bottom: 20px;
+  padding-right: 87px;
+  font-family: Roboto Light;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form-title__important {
+  display: block;
+  text-transform: uppercase;
+  font-family: Roboto Bold;
+}
+
+.form__input {
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  font-family: Roboto Light;
+  vertical-align: middle;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.form-small {
+  padding-left: 19px;
+  font-family: Roboto Light;
+  font-size: 14px;
 }
 
 * {
